@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:layout_gravity="center_horizontal"
+        android:maxEms="10"
+        android:text="邮件是652774767@qq.com，电话是02088888888aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        "
+        android:textSize="20sp"
+        android:autoLink="email|phone"
+        />
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:checkMark="@android:drawable/checkbox_on_background"/>
+
+    <EditText
+        android:layout_width="433dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal"
+        android:text="aaaaa"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+        <TableRow android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="性别"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                />
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/rg">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="75dp"
+                    android:text="男"
+                    android:textSize="20sp"
+                    android:id="@+id/male"
+                    android:checked="true"
+
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:width="75dp"
+                    android:textSize="20sp"
+                    android:id="@+id/female"
+                    />
+            </RadioGroup>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="喜爱的颜色"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_height="50dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="蓝色"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="红色"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:checked="true"/>
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="绿色"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+    <TextView
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show"
+        android:text="你是男人"/>
+
+</LinearLayout>
