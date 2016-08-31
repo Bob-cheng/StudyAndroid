@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,15 +12,14 @@
         android:text="邮件是652774767@qq.com，电话是02088888888aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         "
         android:textSize="20sp"
-        android:autoLink="email|phone"
-        />
+        android:autoLink="email|phone" />
     <CheckedTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:layout_gravity="center_horizontal"
         android:textSize="20sp"
-        android:checkMark="@android:drawable/checkbox_on_background"/>
+        android:checkMark="@android:drawable/checkbox_on_background" />
 
     <EditText
         android:layout_width="433dp"
@@ -112,6 +111,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/show"
-        android:text="你是男人"/>
+        android:text="你是男人" />
 
 </LinearLayout>
